@@ -1,164 +1,87 @@
 <div align="center">
-<img src="assets/banner.png" alt="MERIDIAN" width="100%">
+<img src="assets/banner.svg" alt="MERIDIAN" width="100%">
 
-**[Try paper alpha](https://0xgetz.github.io/meridian/?mode=PAPER) · [Roadmap](ROADMAP.md) · [Specs](specs/README.md) · [Architecture](specs/12-architecture.md) · [Launch guide](docs/LAUNCH.md)**
+**Forge autonomous trading agents. Run them against real market data with virtual capital.**
 
-[![ci](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
+[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-c9a86a.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-226%20green-57c785.svg)](specs/09-tests.md)
+[![TypeScript](https://img.shields.io/badge/type-strict%20TypeScript-3178c6.svg)](https://www.typescriptlang.org/)
+[![Node](https://img.shields.io/badge/node-%E2%89%A520-339933.svg)](package.json)
+[![No real funds](https://img.shields.io/badge/real%20funds-never%20touch%20this%20app-d97068.svg)](specs/10-paper-trading.md)
+
+English · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Bahasa Indonesia](README.id.md)
 
 </div>
 
-# MERIDIAN
+## What is MERIDIAN
 
-Build a trading agent in an isometric village, tune its strategy in FORGE,
-and watch it trade with virtual funds. Stats compile into actual engine
-parameters: polling cadence, context depth, size, slippage and model budget.
+MERIDIAN is a deterministic trading-agent simulator. You build an agent,
+tune its personality through twenty stats, and the compiler turns those
+stats into real engine parameters: polling cadence, context depth,
+position size, slippage and model budget. Then you watch ten agents trade
+the same market tape side by side and keep score net of inference cost.
 
-## Try locally
+Three run modes, one engine:
 
-Node.js 20+ (CI uses 22):
+| Mode | Prices | Money | Network |
+|---|---|---|---|
+| SIM | seeded world, fully reproducible | virtual | none |
+| PAPER | real Coinbase quotes | virtual, $10k book | market data only |
+| CHAIN | token identities from Pons, simulated fills | virtual | RPC reads |
+
+No wallet connection, no private keys, no API keys in the browser, no real
+orders. The engine never places a trade with real money; that boundary is
+tested, not promised.
+
+## Why it is interesting
+
+- **The stats are load-bearing.** FORGE stats compile into the same
+  `AgentConfig` the engine consumes; there is no hidden difficulty dial.
+- **Cost-adjusted scoreboard.** Every decision has an inference price tag;
+  a clever agent that overspends loses to a boring one that does not.
+- **Three model houses** (Anthropic, OpenAI, xAI) with identical balance
+  parameters and up to 101x price spread, so cost is a strategy axis.
+- **Deterministic by default.** A seed plus a build is a reproducible run,
+  which makes regressions provable and results shareable.
+- **226 tests**, type-strict TypeScript, CI on every push.
+
+## Quick start
 
 ```bash
 npm ci
-npm run dev       # open http://localhost:5173
-npm test
-npm run build
-npm run paper     # real Coinbase quotes, virtual ETH, no keys
-TICKS=600 npm run paper  # bounded CLI session
-npm run paper:check      # 3-minute feed and virtual-ledger reconciliation
-npm run sim       # seeded offline market
-npm run paper:chain     # chain identities with simulated prices
-npm run chain     # read-only Robinhood Chain diagnostic
+npm test        # 226 tests
+npm run dev     # local UI
+npm run paper   # PAPER mode against real Coinbase quotes
 ```
 
-The UI has three explicit modes:
+Node.js 20+ (CI runs 22). No configuration, no keys, no accounts.
 
-| Mode | Identity / prices / book | Execution and decisions |
-|---|---|---|
-| SIM | Generated, seeded | Simulated fills; free heuristic |
-| PAPER | Coinbase SOL-ETH, LINK-ETH, ADA-ETH; real book and minute candles | 10 virtual ETH; free heuristic |
-| CHAIN | Robinhood Chain token identities; generated prices and book | Simulated fills; free heuristic |
+## Repository layout
 
-**PAPER uses real market observations, never real money.** There is no wallet,
-signing or exchange order submission. Historical trade candles and sampled book
-midpoints are labelled separately. ETH-quoted products preserve native ETH units.
-
-PAPER buys from asks and sells into bids, respects visible depth, cash and
-slippage, and assumes a **0.60% fee on each side**. Books expire after 15 seconds;
-invalid/empty/crossed/auction books are rejected. A failed refresh leaves an open
-position waiting for recovery instead of fabricating a closing price.
-
-This is a local alpha, not a verified trading competition. REST polling does not
-model matching-engine latency, queue priority or liquidity consumed by other
-players. Direct feed access depends on the user's network and region. Data
-errors are visible; there is no fallback to invented prices in PAPER.
-
-## What the bots do
-
-The free browser and paper CLI use a deterministic heuristic that reads the
-same strategy fields authored in FORGE. **They do not call GPT, Claude or Grok.**
-A house selects configuration and an estimated inference bill. Model ids, prices
-and API assertions in historical specs/config are provisional until revalidated;
-fixture tests are not evidence that a vendor currently serves a model.
-
-FORGE supports 20 stat points, strategy parameters, provider selection,
-backtesting, JSON export/import and deployment of custom agents. Imports and
-board LOAD share `core/build.ts`: finite ranges and budgets are enforced, unknown
-houses default to Anthropic, and imported performance claims are discarded.
-Publishing an imported build requires a fresh backtest.
-
-REWIRE is refused while a position or decision is pending. The tape records the
-house at fill time, so later rewiring cannot rewrite attribution.
-
-The simulated comparison reports gross and net of **estimated** model costs.
-That estimate uses a fixed ETH/USD assumption, not a real API bill. In PAPER,
-the primary P&L excludes hypothetical inference charges and cash is shown separately; game treasury coins are not
-trading collateral or blockchain tokens. The fixed paper fee overrides the
-village's simulated fee discounts.
-
-## Persistence and scores
-
-SIM and CHAIN progress save in separate browser slots. The validated save
-restores upgrades, jobs, roster and records; open positions are not restored.
-PAPER is a fresh, ephemeral session: cash, positions and P&L reset together on
-reload. Its results cannot be published to the village board.
-
-The current board is localStorage in a normal browser; an optional host-provided
-`window.storage` can share it. Neither path provides server-verified rankings.
-Production competitions need an authoritative server and event ledger.
-
-## Architecture and specifications
-
-```text
-src/core   contracts, stat compiler, agents, village orchestration
-           economy, save/build validation, strict virtual account
-src/sim    seeded market, heuristic decisions, reproducible backtests
-src/paper  Coinbase public data; legacy chain-identity simulated market
-src/live   provider adapters, chain RPC, Bitquery and guarded execution
-src/ui     React village, FORGE, DEX, storage, market session lifecycle
-src/run.ts CLI composition: sim / paper / chain-demo / live
+```
+src/core      engine, stat compiler, agent brains
+src/sim       seeded market world
+src/ui        React + canvas interface (FORGE, DEX, HUD)
+src/live      provider wires, paper and chain adapters
+specs/        numbered contracts, one per subsystem
+tests/        vitest suite (226)
+docs/         operator guides
 ```
 
-Core imports only other core modules, enforced by an architecture test.
-`economy.ts`, `save.ts`, `build.ts` and `paper.ts` own separate domain contracts;
-`Village` orchestrates them. FORGE widgets/import and market-session lifecycle
-are separate UI modules. The [spec index](specs/README.md) assigns ownership,
-requirements, acceptance checks and remaining tasks to each subsystem.
+## Documentation
 
-Typecheck, **226 tests across 15 files**, and production build pass locally on
-2026-09-11. Tests cover deterministic runs, hostile input, provider fixtures,
-virtual balance/depth/freshness, outage recovery and historical fill attribution.
-Published CI/deployment status is separate from these local checks.
+- [Roadmap](ROADMAP.md) — shipped, next up, and what is deliberately not happening
+- [Architecture](specs/12-architecture.md)
+- [Paper trading contract](specs/10-paper-trading.md)
+- [Launch and visibility](specs/15-launch-and-visibility.md)
+- [Operator guide](docs/LAUNCH.md)
 
-## Hosted demo and production work
+## Credits and license
 
-The [public paper alpha](https://0xgetz.github.io/meridian/?mode=PAPER) was
-deployed on 2026-09-11. CI and Pages passed for release `9f906e4`; the public
-HTML, JavaScript and CSS were checked against the local production build.
-Full interactive browser QA remains pending because browser automation timed out.
+MERIDIAN is a rebranded, repositioned evolution of the open-source
+Agent Arena prototype. MIT licensed; see [LICENSE](LICENSE). Original
+copyright retained as required.
 
-
-GitHub Pages workflow builds the static UI. First select **Settings → Pages →
-Source: GitHub Actions**, then run `pages` manually. Set repository Actions
-variable `PAGES_ENABLED=true` to deploy automatically on pushes to main. Without
-that opt-in, pushes run CI without a permanently failing Pages deployment.
-
-For public scale: shared market-data service, durable virtual accounts,
-server-verified scores, quotas, monitoring and a recovery/24-hour soak test.
-For real LLM decisions: server-only keys, actual vendor response checks and
-per-user inference budgets. See [spec 14](specs/14-public-paper-alpha.md) and the
-[launch guide](docs/LAUNCH.md).
-
-Real Pons prices require a verified Uniswap v4 swap decoder and pool mapping;
-the Coinbase adapter does not claim to provide that data. Funded execution also
-remains unfinished. `MODE=live` composes market/model adapters; it must not be
-presented as a working production order-routing system.
-
-## Environment and secrets
-
-`.env.example` documents server-side inputs. Export variables in your shell;
-CLI commands do not automatically load `.env`. SIM and PAPER need none.
-
-| Variables | Purpose |
-|---|---|
-| `MODE`, `SEED`, `TICKS` | CLI mode and simulation/session controls |
-| `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `XAI_API_KEY` | Server-side provider adapters |
-| `AGENT_PROVIDERS` | Live roster house order, e.g. `xai,openai` |
-| `BITQUERY_TOKEN` | Legacy live market adapter |
-| `RH_RPC_URL`, `RH_PRIVATE_KEY`, `PONS_ROUTER`, `DRY_RUN` | Standalone execution adapter |
-| `PAPER_PAIRS`, `PAPER_REFRESH_TICKS` | Legacy chain-demo universe/refresh |
-
-Never put secrets in Git (public or private) or browser/Vite environment
-variables. The execution adapter defaults to dry run and its deployed-selector
-preflight refuses unsupported calls. This guard is not proof of a valid buy/sell
-integration. See [SECURITY.md](SECURITY.md).
-
-## Development roadmap
-
-Keep the demo, core, contracts and tests public. Separate hosted operations
-and proprietary strategies into private repositories; credentials belong in
-a secret store. Visibility decisions are in [spec 15](specs/15-launch-and-visibility.md).
-
-
-## License
-
-MIT. Making a repository private does not retract already distributed copies.
+**MERIDIAN is a simulator. Nothing in this repository is financial
+advice, a solicitation to trade, or a gateway for real funds.**

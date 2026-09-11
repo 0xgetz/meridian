@@ -1,41 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Roadmap board: shipped, next up and later">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="MERIDIAN roadmap board: shipped and next up">
   <defs>
-    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#151206"/><stop offset="1" stop-color="#1C180D"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1c"/>
+      <stop offset="1" stop-color="#0e1526"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="420" rx="14" fill="url(#bg2)"/>
-  <rect x="0.5" y="0.5" width="1199" height="419" rx="14" fill="none" stroke="#CCFF00" stroke-opacity="0.22"/>
+  <rect width="1200" height="560" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="559" rx="14" fill="none" stroke="#c9a86a" stroke-opacity="0.25"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="32" y="40" fill="#8fae00" font-size="13" letter-spacing="3">THE BOARD · 2026-09-07 · 162 tests green</text>
+    <!-- title -->
+    <text x="48" y="58" fill="#c9a86a" font-size="17" letter-spacing="2.5">THE BOARD · 2026-09-11 · MERIDIAN · 226 tests green</text>
+    <line x1="48" y1="76" x2="1152" y2="76" stroke="#c9a86a" stroke-opacity="0.2"/>
 
     <!-- shipped -->
-    <text x="32" y="76" fill="#a3e635" font-size="12" letter-spacing="2">SHIPPED</text>
-    <g font-size="12" fill="#F2EFE0">
-      <text x="32" y="104">✓  v0.1 — the village, the stat compiler, the seeded backtest</text>
-      <text x="32" y="128">✓  three houses — anthropic · openai · xai, 101x apart on price</text>
-      <text x="32" y="152">✓  cost-adjusted P&amp;L — the inference bill is subtracted</text>
-      <text x="32" y="176">✓  persistence + CI — survives a reload, green on every push</text>
-      <text x="32" y="200">✓  paper trading — real Robinhood Chain tokens, no keys at all</text>
-      <text x="32" y="224">✓  cold start 6.7x sooner · router ABI proved wrong, signing refused</text>
+    <text x="48" y="112" fill="#c9a86a" font-size="14" letter-spacing="2">SHIPPED</text>
+    <g font-size="14" fill="#e8eaf0">
+      <text x="48" y="142">✓ v0.1 — the world, the stat compiler, the seeded backtest</text>
+      <text x="48" y="170">✓ three houses — anthropic · openai · xai, 101x apart on price</text>
+      <text x="48" y="198">✓ cost-adjusted P&amp;L — the inference bill is subtracted</text>
+      <text x="48" y="226">✓ persistence + CI — survives a reload, green on every push</text>
+      <text x="48" y="254">✓ paper alpha — real quotes, virtual funds, no keys at all</text>
+      <text x="48" y="282">✓ <tspan fill="#c9a86a">rebrand — MERIDIAN identity: navy/brass, serif display</tspan></text>
+      <text x="48" y="310">✓ <tspan fill="#c9a86a">token-launch scope removed from product, docs and specs</tspan></text>
     </g>
 
-    <!-- next -->
-    <text x="32" y="242" fill="#CCFF00" font-size="12" letter-spacing="2">NEXT UP · in order</text>
-    <g font-size="12" fill="#F2EFE0">
-      <text x="32" y="270" fill="#CCFF00">1  the real buy and sell paths on the router</text>
-      <text x="32" y="294">2  prove the OpenAI and xAI wires against a live 200</text>
-      <text x="32" y="318">3  latency measured per house, never assumed</text>
-      <text x="620" y="270">4  FORGE can import a build JSON</text>
-      <text x="620" y="294">5  the tape says which house produced each verdict</text>
-      <text x="620" y="318" fill="#CCFF00">6  REAL PRICES — decode the Uniswap v4 swaps</text>
+    <!-- next up -->
+    <text x="48" y="356" fill="#c9a86a" font-size="14" letter-spacing="2">NEXT UP · in order</text>
+    <g font-size="14">
+      <text x="48" y="386" fill="#c9a86a">1 the real buy and sell paths on the router</text>
+      <text x="48" y="414" fill="#e8eaf0">2 prove the OpenAI and xAI wires against a live 200</text>
+      <text x="48" y="442" fill="#e8eaf0">3 latency measured per house, never assumed</text>
+      <text x="620" y="386" fill="#e8eaf0">4 leaderboard: rank rival builds on net, not gross</text>
+      <text x="620" y="414" fill="#e8eaf0">5 replay export — a seed plus a build as a file</text>
+      <text x="620" y="442" fill="#c9a86a">6 real prices — decode the Uniswap v4 swaps</text>
     </g>
 
-    <text x="32" y="360" fill="#9a9578" font-size="12" letter-spacing="2">LATER</text>
-    <text x="32" y="384" fill="#9a9578" font-size="11.5">cloud save · rank villages on net · replay export · mobile layout · a fourth house, only with a reason</text>
+    <!-- later -->
+    <text x="48" y="488" fill="#8b93a7" font-size="14" letter-spacing="2">LATER</text>
+    <text x="150" y="488" fill="#8b93a7" font-size="14">hosted service split · mobile layout · a fourth house, only with a reason</text>
 
-    <line x1="32" y1="400" x2="1168" y2="400" stroke="#CCFF00" stroke-opacity="0.12"/>
-    <text x="32" y="412" fill="#8fae00" font-size="10">ordering rule: what would embarrass the project if someone read it today comes before what would impress them</text>
+    <line x1="48" y1="512" x2="1152" y2="512" stroke="#c9a86a" stroke-opacity="0.2"/>
+    <text x="48" y="540" fill="#8a7348" font-size="13" font-style="italic">ordering rule: what would embarrass the project if someone read it today comes before what would impress them</text>
   </g>
 </svg>

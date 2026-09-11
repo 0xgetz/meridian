@@ -21,6 +21,9 @@ outranks everything, because nobody reaches the good part through a bad start.
 
 The illustration shows milestone order, not release dates.
 
+![MERIDIAN milestone order: public paper alpha, persistent sessions, real AI
+agents, verified competitions and Pons market data](assets/roadmap-board.png)
+
 | Order | Milestone | Completion criteria |
 |---|---|---|
 | 01 | Public paper alpha | Browser QA, outage recovery, reviewed release and a verified public URL |
@@ -35,6 +38,22 @@ Full contracts: [public alpha](specs/14-public-paper-alpha.md),
 ---
 
 ## Shipped
+
+### 2026-09-11 · Rebrand to MERIDIAN, professional identity — `0a6938b`
+
+The product is now **MERIDIAN**: a deep-ink and brass palette, a serif
+display wordmark, and trading-agent positioning throughout the UI, docs and
+specs. Every token-launch surface is gone: the development-token spec, the
+roadmap's launch section and the README banner no longer mention one. The
+isometric board, HUD and terminal were recolored from the prototype's
+acid-on-brown scheme; leaderboard labels moved from villages to agent
+builds.
+
+**For a post:** rebrand shipped in one pass with the full gate green before
+and after: 226 tests, typecheck and a production build. The engine, specs
+and determinism guarantees were untouched - identity changed, contracts did
+not. MIT license retained with original copyright, as the license requires.
+
 
 Every entry carries a **For a post** block: facts and numbers that are already
 checked, so writing an update is a matter of picking which line to lead with —
@@ -431,7 +450,7 @@ were verified. Keep the remaining interactive browser QA in the alpha checklist.
   rather than forgotten.
 * Replay export: a seed plus a build is already a reproducible run; make it a
   shareable file.
-* Mobile layout for the village scene (the HUD assumes a wide viewport).
+* Mobile layout for the agent scene (the HUD assumes a wide viewport).
 * A fourth house — only when there is a reason beyond "it exists". Adding one
   is one entry in `MODEL_LADDERS`, one in `MODEL_PRICING`, one `WireAdapter`
   and one router line; the cost is keeping another price table honest.

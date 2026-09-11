@@ -2,7 +2,7 @@
  * The shared leaderboard. Two rankings that measure different things:
  *
  *   BUILDS   deterministic backtest P&L on seed 42 — a skill score
- *   VILLAGES live session net P&L — an economy score
+ *   AGENTS live session net P&L - an economy score
  *
  * Tapping a build loads its stats and strategy straight into FORGE.
  */
@@ -16,8 +16,8 @@ import { isShared } from "./storage.js";
 export interface BoardPanelProps {
   board: Board;
   meOwner: string;
-  tab: "BUILDS" | "VILLAGES";
-  onTab(tab: "BUILDS" | "VILLAGES"): void;
+  tab: "BUILDS" | "AGENTS";
+  onTab(tab: "BUILDS" | "AGENTS"): void;
   onLoadBuild(entry: BuildEntry): void;
   onClose(): void;
 }
@@ -28,7 +28,7 @@ export function BoardPanel(props: BoardPanelProps): React.ReactElement {
       <div className="dv-dex-head">
         <span className="dv-dex-title">LEADERBOARD</span>
         <div className="dv-dex-pairs">
-          {(["BUILDS", "VILLAGES"] as const).map((t) => (
+          {(["BUILDS", "AGENTS"] as const).map((t) => (
             <button
               key={t}
               className={`dv-btn dv-btn-tiny${props.tab === t ? " dv-btn-on" : ""}`}
@@ -117,12 +117,12 @@ function VillagesTable({
   entries: VillageEntry[];
   meOwner: string;
 }): React.ReactElement {
-  if (entries.length === 0) return <div className="dv-empty">no villages published yet</div>;
+  if (entries.length === 0) return <div className="dv-empty">no agents published yet</div>;
   return (
     <div className="dv-board-table">
       <div className="dv-board-row dv-board-head dv-board-row-v">
         <span>#</span>
-        <span>VILLAGE</span>
+        <span>BUILD</span>
         <span>OWNER</span>
         <span>NET P&amp;L</span>
         <span>TREASURY</span>

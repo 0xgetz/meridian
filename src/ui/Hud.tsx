@@ -61,7 +61,7 @@ export function StatCards({ view, rank }: StatCardsProps): React.ReactElement {
       <div className="dv-card">
         <div className="dv-card-label">RANK</div>
         <div className="dv-card-value">{rank === null ? "—" : `#${rank}`}</div>
-        <div className="dv-card-sub">VILLAGES board</div>
+        <div className="dv-card-sub">MERIDIAN board</div>
       </div>
     </div>
   );
@@ -116,8 +116,8 @@ export function RivalStandings({
   const top = entries.slice(0, 3);
   return (
     <div className="dv-rivals">
-      <div className="dv-rivals-title">RIVAL VILLAGES</div>
-      {top.length === 0 && <div className="dv-rivals-empty">no villages published yet</div>}
+      <div className="dv-rivals-title">RIVAL AGENTS</div>
+      {top.length === 0 && <div className="dv-rivals-empty">no agents published yet</div>}
       {top.map((v, i) => (
         <div key={v.id} className={`dv-rival${v.id === meId ? " dv-rival-me" : ""}`}>
           <span className="dv-rival-rank">{i + 1}</span>

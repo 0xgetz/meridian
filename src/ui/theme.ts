@@ -1,28 +1,28 @@
-/** Robinhood Chain brand palette. Nothing here is decorative-only. */
+/** MERIDIAN brand palette. Nothing here is decorative-only. */
 
 import type { AgentClass } from "../core/types.js";
 
 export const PALETTE = {
-  bg: "#1C180D",
-  bgDeep: "#151206",
-  panel: "rgba(38, 33, 16, 0.62)",
-  panelEdge: "rgba(204, 255, 0, 0.18)",
-  accent: "#CCFF00",
-  accentDim: "#8fae00",
-  ink: "#F2EFE0",
-  inkDim: "#9a9578",
-  ground: "#26210F",
-  groundAlt: "#2d2712",
-  up: "#a3e635",
+  bg: "#0e1526",
+  bgDeep: "#0a0f1c",
+  panel: "rgba(16, 24, 43, 0.72)",
+  panelEdge: "rgba(201, 168, 106, 0.20)",
+  accent: "#c9a86a",
+  accentDim: "#8a7348",
+  ink: "#e8eaf0",
+  inkDim: "#a7b0c4",
+  ground: "#16203a",
+  groundAlt: "#1b2745",
+  up: "#57c785",
   down: "#d97068",
 } as const;
 
 export const CLASS_COLOR: Record<AgentClass, string> = {
   SCOUT: "#22d3ee",
-  SNIPER: "#a3e635",
-  WHALE: "#fbbf24",
+  SNIPER: "#57c785",
+  WHALE: "#c9a86a",
   ARB: "#e879f9",
-  CUSTOM: "#CCFF00",
+  CUSTOM: "#c9a86a",
 };
 
 export const FONT = "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace";

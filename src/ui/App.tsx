@@ -73,7 +73,7 @@ export function App(): React.ReactElement {
   const [dexPair, setDexPair] = useState<string | null>(null);
   const [draft, setDraft] = useState<ForgeDraft>(EMPTY_DRAFT);
   const [board, setBoard] = useState<Board>({ builds: [], villages: [] });
-  const [boardTab, setBoardTab] = useState<"BUILDS" | "VILLAGES">("BUILDS");
+  const [boardTab, setBoardTab] = useState<"BUILDS" | "AGENTS">("BUILDS");
   const [me, setMe] = useState<Me>({ owner: "", lastBuildId: null });
   const [toast, setToast] = useState<string | null>(null);
   /* Two-step: the second click within the window is the one that wipes. */
@@ -267,7 +267,7 @@ export function App(): React.ReactElement {
         roster: village.agents.length,
       }),
     );
-    flash("village published");
+    flash("agent build published");
   }, [village, me, villageId, flash]);
 
   const onLoadBuild = useCallback((e: BuildEntry) => {
@@ -349,13 +349,13 @@ export function App(): React.ReactElement {
               </button>
             ))}
           </div>
-          <button className="dv-btn dv-btn-primary" disabled={mode === "PAPER"} title={mode === "PAPER" ? "Paper rankings need server verification" : "Save village score"} onClick={() => void onPublishVillage()}>
+          <button className="dv-btn dv-btn-primary" disabled={mode === "PAPER"} title={mode === "PAPER" ? "Paper rankings need server verification" : "Publish this build to the leaderboard"} onClick={() => void onPublishVillage()}>
             PUBLISH
           </button>
           <button
             className={`dv-btn dv-btn-tiny${resetArmed ? " dv-btn-danger" : ""}`}
             onClick={onReset}
-            title="wipes the saved village in this browser"
+            title="wipes this browser's saved session"
           >
             {resetArmed ? "SURE?" : "RESET"}
           </button>
