@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the agent: state machine, pathing, training, XP.
+ * MERIDIAN — the agent: state machine, pathing, training, XP.
  * Zero dependencies, isomorphic.
  *
  *   REST -> TRAIN -> SCAN -> DECIDE -> HOLD -> SETTLE -> REST

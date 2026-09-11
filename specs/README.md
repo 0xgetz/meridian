@@ -24,7 +24,6 @@ are evidence from their stated dates, not a claim of current verification.
 
 | [14 — Public paper alpha](14-public-paper-alpha.md) | Coinbase quotes, virtual ledger, feed lifecycle | Real data / virtual execution, outage recovery |
 | [15 — Launch and visibility](15-launch-and-visibility.md) | Public demo, private service boundary, growth | Pilot and server-verified competitions |
-| [16 — Development token](16-development-token.md) | Utility, economics, review and launch gates | Design only; no issuance |
 
 ## Working agreement
 

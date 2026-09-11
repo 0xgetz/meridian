@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — execution against the Pons router on Robinhood Chain.
+ * MERIDIAN — execution against the Pons router on Robinhood Chain.
  *
  * dryRun defaults to TRUE. Every path that would sign prints the exact call it
  * would have made instead. Turning it off is a deliberate act, not a default.

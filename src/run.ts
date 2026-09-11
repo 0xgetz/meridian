@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — node entry point.
+ * MERIDIAN — node entry point.
  *
  *   npm run paper       Coinbase real quotes + virtual ETH + heuristicBrain
  *   npm run paper:chain Robinhood identities + simulated prices
@@ -75,7 +75,7 @@ async function runSim(): Promise<void> {
     onTick: () => market.advance(1),
   });
 
-  console.log(`DEGEN VILLAGE — sim, seed ${seed}, 60fps${ticks ? `, ${ticks} ticks` : ""}`);
+  console.log(`MERIDIAN — sim, seed ${seed}, 60fps${ticks ? `, ${ticks} ticks` : ""}`);
   let frame = 0;
   const started = Date.now();
   for (;;) {
@@ -116,7 +116,7 @@ async function runLive(): Promise<void> {
     if (agent && isProvider(name)) agent.provider = name;
   });
 
-  console.log("DEGEN VILLAGE — live: Pons on Robinhood Chain, three houses in the loop.");
+  console.log("MERIDIAN — live: Pons on Robinhood Chain, three houses in the loop.");
   for (const agent of village.agents) {
     const cfg = village.configFor(agent);
     console.log(`  ${agent.name.padEnd(12)} ${cfg.provider.padEnd(10)} ${cfg.model}`);
@@ -158,7 +158,7 @@ async function runChainDemo(): Promise<void> {
   });
 
   const { chainId, head, ok } = await market.verify();
-  console.log("DEGEN VILLAGE — paper: real Robinhood Chain tokens, simulated prices.");
+  console.log("MERIDIAN — paper: real Robinhood Chain tokens, simulated prices.");
   console.log(`  rpc      ${market.endpoint}`);
   console.log(`  chain    ${chainId}${ok ? " (Robinhood Chain)" : " — NOT Robinhood Chain"}`);
   console.log(`  head     ${head.toLocaleString()}`);

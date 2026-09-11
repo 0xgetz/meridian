@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — deterministic heuristic brain.
+ * MERIDIAN — deterministic heuristic brain.
  *
  * This is the sim's stand-in for Claude. It reads exactly the strategy
  * parameters FORGE exposes, so a backtest measures the build the player

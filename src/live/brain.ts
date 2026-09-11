@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the live brain. Real Claude, real money on the other side.
+ * MERIDIAN — the live brain. Real Claude, real money on the other side.
  *
  * Raw fetch on purpose: src/core is isomorphic and dependency-free, and this
  * file is the only thing standing between a parsed JSON blob and a signed

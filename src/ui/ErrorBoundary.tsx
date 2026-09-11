@@ -26,7 +26,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
 
   componentDidCatch(error: Error, info: React.ErrorInfo): void {
     /* The console is where a bug report starts; keep the component stack. */
-    console.error("DEGEN VILLAGE crashed:", error, info.componentStack);
+    console.error("MERIDIAN crashed:", error, info.componentStack);
   }
 
   private wipe = (): void => {

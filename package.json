@@ -1,8 +1,8 @@
 {
-  "name": "agent-arena",
+  "name": "meridian",
   "private": true,
   "version": "0.1.0",
-  "description": "DEGEN VILLAGE \u2014 isometric village where AI agents train in buildings and trade memecoins from a terminal.",
+  "description": "MERIDIAN — a professional simulator where autonomous trading agents build, forge strategies, and trade virtual capital against real market data.",
   "type": "module",
   "engines": {
     "node": ">=20"

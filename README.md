@@ -1,21 +1,13 @@
 <div align="center">
-<img src="assets/banner.png" alt="DEGEN VILLAGE — Agent Arena" width="100%">
+<img src="assets/banner.png" alt="MERIDIAN" width="100%">
 
-**[Try paper alpha](https://zostaff.github.io/agent-arena/?mode=PAPER) · [Roadmap](ROADMAP.md) · [Specs](specs/README.md) · [Architecture](specs/12-architecture.md) · [Launch guide](docs/LAUNCH.md)**
+**[Try paper alpha](https://0xgetz.github.io/meridian/?mode=PAPER) · [Roadmap](ROADMAP.md) · [Specs](specs/README.md) · [Architecture](specs/12-architecture.md) · [Launch guide](docs/LAUNCH.md)**
 
-[![ci](https://github.com/zostaff/agent-arena/actions/workflows/ci.yml/badge.svg)](https://github.com/zostaff/agent-arena/actions/workflows/ci.yml)
+[![ci](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 
 </div>
 
-# Agent Arena / DEGEN VILLAGE
-
-> ## **TOKEN LAUNCH ON ROBINHOOD CHAIN**
->
-> **A community-initiated memecoin launch is planned for Agent Arena.**
-> Creator fees are intended to go to the project founder.
->
-> Follow the [token launch roadmap](ROADMAP.md#token-launch-on-robinhood-chain).
-> The token address and launch details will be added when confirmed.
+# MERIDIAN
 
 Build a trading agent in an isometric village, tune its strategy in FORGE,
 and watch it trade with virtual funds. Stats compile into actual engine
@@ -119,7 +111,7 @@ Published CI/deployment status is separate from these local checks.
 
 ## Hosted demo and production work
 
-The [public paper alpha](https://zostaff.github.io/agent-arena/?mode=PAPER) was
+The [public paper alpha](https://0xgetz.github.io/meridian/?mode=PAPER) was
 deployed on 2026-09-11. CI and Pages passed for release `9f906e4`; the public
 HTML, JavaScript and CSS were checked against the local production build.
 Full interactive browser QA remains pending because browser automation timed out.
@@ -160,17 +152,12 @@ variables. The execution adapter defaults to dry run and its deployed-selector
 preflight refuses unsupported calls. This guard is not proof of a valid buy/sell
 integration. See [SECURITY.md](SECURITY.md).
 
-## Development and token roadmap
+## Development roadmap
 
-Keep the demo, core, contracts and tests public. Separate hosted operations and
-proprietary strategies into private repositories; credentials belong in a secret
-store. Visibility decisions and migration instructions are in
-[spec 15](specs/15-launch-and-visibility.md).
+Keep the demo, core, contracts and tests public. Separate hosted operations
+and proprietary strategies into private repositories; credentials belong in
+a secret store. Visibility decisions are in [spec 15](specs/15-launch-and-visibility.md).
 
-A **development token** is now a roadmap item: product demand, utility and funding
-alternatives, economics, jurisdiction-specific review, testnet and independent
-audit precede a separate launch decision. No token is issued and the free paper
-demo does not require one. See [spec 16](specs/16-development-token.md).
 
 ## License
 

@@ -129,7 +129,7 @@ export async function loadBoard(): Promise<Board> {
 export async function loadMe(): Promise<Me> {
   const me = await readKey<Me>(ME_KEY, false, { owner: "", lastBuildId: null });
   if (!me.owner) {
-    me.owner = `degen-${Math.random().toString(36).slice(2, 7)}`;
+    me.owner = `mrd-${Math.random().toString(36).slice(2, 7)}`;
     await writeKey(ME_KEY, me, false);
   }
   return me;

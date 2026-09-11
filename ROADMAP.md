@@ -1,14 +1,6 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="DEGEN VILLAGE" width="100%">
+  <img src="assets/banner.svg" alt="MERIDIAN" width="100%">
 </div>
-
-> ## **TOKEN LAUNCH ON ROBINHOOD CHAIN**
->
-> **A community-initiated memecoin launch is part of the Agent Arena roadmap.**
->
-> Creator fees are intended to go to the project founder.
->
-> **Status: planned.** The token address and launch details will be added when confirmed.
 
 # Roadmap
 
@@ -27,11 +19,7 @@ read the code today** comes before what would impress them — with one standing
 exception: something that spoils the first thirty seconds for a new player
 outranks everything, because nobody reaches the good part through a bad start.
 
-![Agent Arena development roadmap — token launch on Robinhood Chain is a planned milestone](assets/roadmap-2026-09.png)
-
-**TOKEN LAUNCH ON ROBINHOOD CHAIN** is a planned development milestone.
-Utility, vesting, treasury controls, legal review and an independent audit precede
-launch. The illustration shows milestone order, not release dates.
+The illustration shows milestone order, not release dates.
 
 | Order | Milestone | Completion criteria |
 |---|---|---|
@@ -40,11 +28,9 @@ launch. The illustration shows milestone order, not release dates.
 | 03 | Real AI agents | Verified server-side model calls, latency and spending limits |
 | 04 | Verified competitions | Authoritative rankings, fixed rules and replayable results |
 | 05 | Pons market data | Verified swaps, candles, token mapping and liquidity |
-| **06** | **TOKEN LAUNCH ON ROBINHOOD CHAIN** | **Utility, vesting, treasury, legal review, testnet and independent audit** |
 
 Full contracts: [public alpha](specs/14-public-paper-alpha.md),
-[launch and visibility](specs/15-launch-and-visibility.md),
-[token development](specs/16-development-token.md).
+[launch and visibility](specs/15-launch-and-visibility.md).
 
 ---
 
@@ -60,17 +46,16 @@ The current released alpha has **226 passing tests**. Historical entries below
 retain their original measurements; implementation-batch notes describe the
 validation performed before the release.
 
-### 2026-09-11 · Public paper alpha and illustrated roadmap — [`9f906e4`](https://github.com/zostaff/agent-arena/commit/9f906e4)
+### 2026-09-11 · Public paper alpha and illustrated roadmap — `9f906e4`
 
-**Try it:** [PAPER alpha](https://zostaff.github.io/agent-arena/?mode=PAPER).
-[CI](https://github.com/zostaff/agent-arena/actions/runs/34532512283) and
-[Pages deployment](https://github.com/zostaff/agent-arena/actions/runs/34532512239)
+**Try it:** `npm run paper` locally until the new hosted URL is live.
+CI and
+Pages deployment
 completed successfully. The public JS/CSS match the checked local production build.
 
 **What changed.** Real Coinbase quotes, bounded virtual execution, isolated
 sessions, core/UI refactoring, validated build imports, English subsystem specs
-and an illustrated six-stage roadmap. **TOKEN LAUNCH ON ROBINHOOD CHAIN** is
-prominent as a planned milestone, with utility, vesting, treasury and audit gates.
+and an illustrated five-stage roadmap.
 
 **For a post**
 
@@ -88,7 +73,7 @@ prominent as a planned milestone, with utility, vesting, treasury and audit gate
   timeouts. The short feed check is not a 24-hour soak; Pons real prices, durable
   server accounts, paid LLM verification and authoritative rankings remain planned.
 
-### 2026-09-07 · Cold start fixed, and a router ABI that was wrong all along — [`ca97ddd`](https://github.com/zostaff/agent-arena/commit/ca97ddd)
+### 2026-09-07 · Cold start fixed, and a router ABI that was wrong all along — `ca97ddd`
 
 **What changed.** Two roadmap items in one pass: a new agent now trades before
 it trains, and `execute.ts` refuses to sign any call whose selector is not in
@@ -120,7 +105,7 @@ the deployed router's bytecode. 6 new tests.
 * **The honest limit:** this makes execution *safe*, not *working*. The real
   buy path is still unwritten, and the sell path is still unknown.
 
-### 2026-09-07 · Paper trading on real Robinhood Chain tokens — [`34e6ecc`](https://github.com/zostaff/agent-arena/commit/34e6ecc)
+### 2026-09-07 · Paper trading on real Robinhood Chain tokens — `34e6ecc`
 
 **What changed.** A third mode. `npm run paper`, or the PAPER switch in the
 header: the bots trade the tokens launching on Robinhood Chain right now, read
@@ -165,7 +150,7 @@ chain`, and two new specs. 14 new tests.
 tokens that had existed for seconds. Every address is real and clickable in a
 block explorer; the chart above them is not.*
 
-### 2026-09-07 · The village survives a reload, and CI publishes it — [`01d62db`](https://github.com/zostaff/agent-arena/commit/01d62db)
+### 2026-09-07 · The village survives a reload, and CI publishes it — `01d62db`
 
 **What changed.** `save()` / `restore()` on the village, a hostile-input
 `parseSave`, autosave every 240 ticks with a flush on tab hide, a two-click
@@ -199,7 +184,7 @@ then publish). 9 new tests.
 * **The honest limit:** the save is per browser. There is no account, no cloud
   slot, and clearing site data still clears the village.
 
-### 2026-09-06 · Cost-adjusted P&L — [`07e37de`](https://github.com/zostaff/agent-arena/commit/07e37de)
+### 2026-09-06 · Cost-adjusted P&L — `07e37de`
 
 **What changed.** The inference bill is subtracted from the result. `netEth =
 pnlEth - spentUsd / ASSUMED_ETH_USD`; net sits beside gross everywhere; the
@@ -231,7 +216,7 @@ gained a net-of-inference row. 9 new tests.
 *The FORGE: 20 stat points, the house the build runs on, and a compiled config
 that reprices as you click. The backtest underneath reports NET beside gross.*
 
-### 2026-09-06 · Three houses — [`8534cae`](https://github.com/zostaff/agent-arena/commit/8534cae)
+### 2026-09-06 · Three houses — `8534cae`
 
 **What changed.** Every agent is wired to Anthropic, OpenAI or xAI. Ladder,
 pricing and wire contract per house; FORGE picker; REWIRE for 60 coins;
@@ -262,7 +247,7 @@ pricing and wire contract per house; FORGE picker; REWIRE for 60 coins;
   fixtures. Neither has answered this code for real yet — that is item 1 in
   *Next up*, and it stays worded that way until it has.
 
-### 2026-09-06 · DEGEN VILLAGE v0.1 — [`7b9d892`](https://github.com/zostaff/agent-arena/commit/7b9d892)
+### 2026-09-06 · MERIDIAN v0.1 — `7b9d892`
 
 **What changed.** The whole thing: stat compiler, village economy, agent state
 machine, seeded sim, deterministic backtest, live Anthropic brain, Bitquery
@@ -363,16 +348,7 @@ stale/invalid data and insufficient depth. Isolate sessions from saved SIM P&L.
 No wallet or model API keys in the browser. Keep chain-identity/sim-price mode
 explicitly labelled. Validate with fixtures, a public-feed probe and browser QA.
 
-### 11. **TOKEN LAUNCH ON ROBINHOOD CHAIN** — development and launch gates
-
-Owner: [spec 16](specs/16-development-token.md). Plan a token on **Robinhood Chain** to support project
-development, after a useful free paper alpha and repeat usage. Specify utility,
-funding alternatives, supply, allocations, vesting, treasury reporting and
-multisig controls. Get jurisdiction-specific review, independent contract audit
-and testnet evidence before any issuance. No token sale, deployment, investment
-return promise or required token purchase is authorized by this roadmap item.
-
-### 12. Public/private split and community launch
+### 11. Public/private split and community launch
 
 Owner: [spec 15](specs/15-launch-and-visibility.md). Keep the demo, engine,
 contracts, tests and reproducibility public; isolate hosted service operations,

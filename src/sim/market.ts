@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — deterministic sim market.
+ * MERIDIAN — deterministic sim market.
  *
  * Momentum random walk per pair, folded into OHLC candles, with a synthetic
  * order book derived from the same seeded stream. Same seed, same tape.

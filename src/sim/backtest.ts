@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — deterministic backtest behind the FORGE bar.
+ * MERIDIAN — deterministic backtest behind the FORGE bar.
  *
  * Seed 42, 7000 ticks, one agent, blocking decisions. Two runs of the same
  * build return byte-identical numbers; that is what makes the BUILDS

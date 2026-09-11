@@ -14,7 +14,7 @@ export const PALETTE = {
   ground: "#26210F",
   groundAlt: "#2d2712",
   up: "#a3e635",
-  down: "#f87171",
+  down: "#d97068",
 } as const;
 
 export const CLASS_COLOR: Record<AgentClass, string> = {

@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — live market: Pons bonding-curve DEX on Robinhood Chain,
+ * MERIDIAN — live market: Pons bonding-curve DEX on Robinhood Chain,
  * read through Bitquery's streaming GraphQL endpoint.
  *
  * Two queries:

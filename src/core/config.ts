@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the stat compiler.
+ * MERIDIAN — the stat compiler.
  *
  * The village IS the config editor. Every stat bar the player fills is a real
  * field the engine reads on the next tick. Nothing here is cosmetic.

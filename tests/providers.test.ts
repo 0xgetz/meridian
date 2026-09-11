@@ -44,7 +44,7 @@ import { heuristicBrain } from "../src/sim/brain.js";
 import { mulberry32 } from "../src/sim/rng.js";
 
 const snap: Snapshot = {
-  pair: "$DEGEN",
+  pair: "$MRD",
   last: 0.0012,
   candles: [{ t: 0, o: 0.001, h: 0.0013, l: 0.0009, c: 0.0012, v: 4 }],
   bids: [{ price: 0.0011, size: 3 }],

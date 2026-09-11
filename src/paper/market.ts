@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — paper trading against the real Robinhood Chain universe.
+ * MERIDIAN — paper trading against the real Robinhood Chain universe.
  *
  * PAPER MODE IS THE HONEST MIDDLE. Live mode needs an Anthropic/OpenAI/xAI key,
  * a Bitquery token and a funded wallet. Sim mode needs nothing but is a world

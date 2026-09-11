@@ -1,6 +1,6 @@
 # 00 — Overview & repo map
 
-**DEGEN VILLAGE** is an isometric village where AI agents train in buildings,
+**MERIDIAN** is an isometric village where AI agents train in buildings,
 walk to a terminal, and trade memecoins on the Pons bonding-curve DEX
 (Robinhood Chain). Every stat bar in the village is a real config field the
 engine reads on the next tick.

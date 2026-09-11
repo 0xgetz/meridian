@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the village engine: buildings, treasury, boosts, roster.
+ * MERIDIAN — the village engine: buildings, treasury, boosts, roster.
  * Zero dependencies, isomorphic. Market and Brain are injected.
  */
 

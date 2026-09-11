@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — core type contracts.
+ * MERIDIAN — core type contracts.
  * Zero dependencies, isomorphic: this file must import nothing.
  */
 

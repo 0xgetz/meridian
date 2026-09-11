@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — market primitives shared by sim and live.
+ * MERIDIAN — market primitives shared by sim and live.
  * Zero dependencies, isomorphic.
  */
 

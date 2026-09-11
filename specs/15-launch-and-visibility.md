@@ -8,7 +8,7 @@ from simulation, and local scores from a verified competition.
 
 ## Public surface
 
-Keep `agent-arena` public: frontend, core engine, SIM/PAPER adapters, API/build
+Keep `meridian` public: frontend, core engine, SIM/PAPER adapters, API/build
 schemas, fixtures, tests, methodology, roadmap and self-host instructions.
 The public repo currently uses MIT. New private services should be separate
 repos with separate access lists and licensing; previously distributed MIT
@@ -16,9 +16,9 @@ copies cannot be recalled by toggling visibility.
 
 ## Private surface
 
-`agent-arena-cloud` (proposed, not created): deployment configuration, operations,
+`meridian-cloud` (proposed, not created): deployment configuration, operations,
 account backend internals and anti-abuse controls. Proprietary prompts/strategies
-may live here or in `agent-arena-strategies`. API schemas stay public. Credentials
+may live here or in `meridian-strategies`. API schemas stay public. Credentials
 belong in a secret manager or deployment secrets, never even in a private Git
 repo. User data and raw account logs belong in access-controlled storage.
 

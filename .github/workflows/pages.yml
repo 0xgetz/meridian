@@ -37,7 +37,7 @@ jobs:
       - run: npm run typecheck
       - run: npm test
 
-      # GITHUB_PAGES switches vite's base to /agent-arena/ for project pages.
+      # GITHUB_PAGES switches vite's base to /meridian/ for project pages.
       - run: npm run build
         env:
           GITHUB_PAGES: "1"

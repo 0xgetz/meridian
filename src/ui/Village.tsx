@@ -116,7 +116,7 @@ export function VillageScene(props: VillageSceneProps): React.ReactElement {
       className="dv-scene"
       viewBox={gridViewBox(GRID, 110)}
       preserveAspectRatio="xMidYMid meet"
-      aria-label="DEGEN VILLAGE"
+      aria-label="MERIDIAN village"
     >
       <defs>
         <BuildingGradients ids={BUILDING_DEFS.map((d) => d.id)} />

@@ -1,4 +1,4 @@
-# Agent Arena: launch, growth and repository boundaries
+# MERIDIAN: launch, growth and repository boundaries
 
 Date: September 10, 2026. This guide describes the current implementation and
 planned work. A local alpha is not a published production service.
@@ -42,7 +42,7 @@ strategies may remain flat until an entry signal appears.
 1. **Publish the demo.** In GitHub, select Settings → Pages → Build and deployment
    → Source: GitHub Actions, then manually run the `pages` workflow. Set the
    repository variable `PAGES_ENABLED=true` to enable automatic deployments.
-   The expected URL is `https://zostaff.github.io/agent-arena/`; verify a successful
+   The expected URL is `https://0xgetz.github.io/meridian/`; verify a successful
    deployment before advertising it as a working link.
 2. **Run a 20–30-person pilot.** Explain the three modes, display feed health,
    provide a short FORGE walkthrough and collect feedback. Check Coinbase access
@@ -85,7 +85,7 @@ include the period, fees and evaluation conditions.
 
 ## Public and private assets
 
-| Public: agent-arena | Private: separate repositories or systems |
+| Public: meridian | Private: separate repositories or systems |
 |---|---|
 | UI, core engine, SIM/PAPER, tests and specs | Hosted backend operations and infrastructure |
 | Build format, API/SDK and evaluation methodology | Proprietary strategies and prompts |
@@ -98,7 +98,7 @@ can be downloaded, including JavaScript and source maps; frontend code cannot
 hide a proprietary algorithm.
 
 GitHub cannot make an individual folder or branch of a public repository private.
-Keep `agent-arena` public and create a separate private `agent-arena-cloud` for
+Keep `meridian` public and create a separate private `meridian-cloud` for
 future closed services. Preserve compatible public schemas.
 
 To close the entire repository: Settings → General → Danger Zone → Change
@@ -116,7 +116,6 @@ This is not a complete audit of the contents of Git history.
 
 ## Development token
 
-The roadmap includes a separate [token specification](../specs/16-development-token.md).
 First establish repeat product use, then define utility and compare a token with
 subscriptions, grants and sponsorship. Next specify the budget, supply,
 allocation, team vesting, multisig treasury, jurisdiction-specific legal review,

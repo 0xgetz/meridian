@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — Robinhood Chain over raw JSON-RPC. No indexer, no API key.
+ * MERIDIAN — Robinhood Chain over raw JSON-RPC. No indexer, no API key.
  *
  * The public RPC is free and open: chain 4663, https://rpc.mainnet.chain.robinhood.com.
  * That is the whole point of this file — a player can run the village against

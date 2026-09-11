@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the app shell.
+ * MERIDIAN — the app shell.
  *
  * The browser runs SIM, CHAIN or real-quote PAPER with a free heuristic brain. Live mode is `MODE=live npm run live` from node,
  * where the API key stays on the machine instead of in a bundle.
@@ -318,8 +318,8 @@ export function App(): React.ReactElement {
       <header className="dv-top">
         <div className="dv-brand">
           <span className="dv-brand-mark">◆</span>
-          <span className="dv-brand-name">DEGEN VILLAGE</span>
-          <span className="dv-brand-sub">agent-arena · paper trading</span>
+          <span className="dv-brand-name">MERIDIAN</span>
+          <span className="dv-brand-sub">agent trading simulator</span>
         </div>
         <StatCards view={view} rank={myRank} />
         <div className="dv-top-actions">

@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — brain contract, prompt assembly, and verdict hardening.
+ * MERIDIAN — brain contract, prompt assembly, and verdict hardening.
  * Zero dependencies, isomorphic. No network here; see src/live/brain.ts.
  */
 

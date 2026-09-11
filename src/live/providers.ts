@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the other two houses.
+ * MERIDIAN — the other two houses.
  *
  * src/live/brain.ts talks to Anthropic. This file talks to OpenAI and xAI
  * through one shared, defensive request loop, because the three wire contracts

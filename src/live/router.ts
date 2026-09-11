@@ -1,5 +1,5 @@
 /**
- * DEGEN VILLAGE — the house router.
+ * MERIDIAN — the house router.
  *
  * One Village holds agents wired to different houses at the same time, so the
  * Brain the village is handed cannot be a single vendor client. This router IS

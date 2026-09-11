@@ -6,7 +6,7 @@ import react from "@vitejs/plugin-react";
  * by .github/workflows/pages.yml; a local build stays at the root so `npm run
  * preview` and a file:// open both behave.
  */
-const base = process.env.GITHUB_PAGES ? "/agent-arena/" : "/";
+const base = process.env.GITHUB_PAGES ? "/meridian/" : "/";
 
 export default defineConfig({
   base,
