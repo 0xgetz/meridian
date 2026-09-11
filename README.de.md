@@ -4,10 +4,10 @@
 **Autonome Trading-Agenten schmieden. Trainiert auf echten Marktdaten, mit virtuellem Kapital.**
 
 [![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
-[![Lizenz: MIT](https://img.shields.io/badge/lizenz-MIT-c9a86a.svg)](LICENSE)
+[![Lizenz](https://img.shields.io/badge/lizenz-proprietär-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20gr%C3%BCn-57c785.svg)](specs/09-tests.md)
 
-[English](README.md) · Deutsch · [Français](README.fr.md) · [Español](README.es.md) · [Bahasa Indonesia](README.id.md)
+[English](README.md) · Deutsch · [Français](README.fr.md) · [Español](README.es.md) · [Bahasa Indonesia](README.id.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
 </div>
 
@@ -66,8 +66,9 @@ Node.js 20+ (CI nutzt 22). Keine Konfiguration, keine Keys, keine Konten.
 
 ## Lizenz
 
-MIT-Lizenz; siehe [LICENSE](LICENSE). MERIDIAN ist eine rebrandete,
-neu positionierte Weiterentwicklung des Open-Source-Prototyps Agent Arena.
+Urheberrecht (c) 2026 XHI. Alle Rechte vorbehalten; siehe [LICENSE](LICENSE).
+MERIDIAN ist eine rebrandete, neu positionierte Weiterentwicklung des
+Open-Source-Prototyps Agent Arena.
 
 **MERIDIAN ist ein Simulator. Nichts in diesem Repository ist
 Finanzberatung oder eine Aufforderung zu realen Trades.**

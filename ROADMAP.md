@@ -52,7 +52,7 @@ builds.
 **For a post:** rebrand shipped in one pass with the full gate green before
 and after: 226 tests, typecheck and a production build. The engine, specs
 and determinism guarantees were untouched - identity changed, contracts did
-not. MIT license retained with original copyright, as the license requires.
+not. The upstream MIT grant on prototype versions already distributed stands; new MERIDIAN releases move to a proprietary license held by XHI.
 
 
 Every entry carries a **For a post** block: facts and numbers that are already

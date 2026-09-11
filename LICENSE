@@ -1,21 +1,25 @@
-MIT License
+Copyright (c) 2026 XHI (github.com/0xgetz)
 
-Copyright (c) 2026 zostaff
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+MERIDIAN and its source code, artwork and documentation in this
+repository are proprietary works of the copyright holder named above,
+except where a component explicitly states otherwise.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+No part of this work may be copied, reproduced, distributed, publicly
+displayed, modified, or used to create derivative works without prior
+written permission from the copyright holder, including for commercial
+purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Factual and educational review of the public source is permitted. The
+simulator processes no real funds and stores no secrets; nothing in this
+license grants any right to operate the software as a financial service
+for third parties.
+
+The repository history includes an upstream prototype distributed under
+the MIT license; rights already granted under that license to recipients
+of those specific versions are unaffected by this notice. All work
+published under the MERIDIAN name after the 2026-09-11 rebrand is covered
+by this proprietary license.
+
+Requests for permission: open a GitHub issue on the repository.

@@ -10,7 +10,7 @@ from simulation, and local scores from a verified competition.
 
 Keep `meridian` public: frontend, core engine, SIM/PAPER adapters, API/build
 schemas, fixtures, tests, methodology, roadmap and self-host instructions.
-The public repo currently uses MIT. New private services should be separate
+The public repo now uses a proprietary license for MERIDIAN releases; upstream MIT applies only to prototype versions already distributed. New private services should be separate
 repos with separate access lists and licensing; previously distributed MIT
 copies cannot be recalled by toggling visibility.
 

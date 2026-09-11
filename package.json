@@ -1,6 +1,8 @@
 {
   "name": "meridian",
   "private": true,
+  "license": "SEEK LICENSE IN THE LICENSE FILE",
+  "author": "XHI <github.com/0xgetz>",
   "version": "0.1.0",
   "description": "MERIDIAN — a professional simulator where autonomous trading agents build, forge strategies, and trade virtual capital against real market data.",
   "type": "module",

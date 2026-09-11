@@ -105,8 +105,8 @@ To close the entire repository: Settings → General → Danger Zone → Change
 repository visibility → Make private, then complete GitHub's confirmation.
 Review collaborator access, Pages, plan restrictions and integrations first.
 Changing visibility unpublishes Pages; subsequent availability depends on the
-plan and configuration. Public forks, clones and already granted MIT rights do
-not disappear. Visibility changes cannot recall distributed code.
+plan and configuration. Public forks, clones and rights already granted (including upstream
+MIT on prototype versions) do not disappear. Visibility changes cannot recall distributed code.
 
 If a credential entered Git, revoke or rotate it at the provider first. Then
 follow GitHub's sensitive-data removal procedure and coordinate updates to

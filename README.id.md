@@ -4,10 +4,10 @@
 **Forge trading agent yang mandiri. Uji mereka dengan data pasar asli dan modal virtual.**
 
 [![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
-[![Lisensi MIT](https://img.shields.io/badge/lisensi-MIT-c9a86a.svg)](LICENSE)
+[![Lisensi](https://img.shields.io/badge/lisensi-proprietary-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20lulus-57c785.svg)](specs/09-tests.md)
 
-[English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · Bahasa Indonesia
+[English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · Bahasa Indonesia · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
 </div>
 
@@ -64,8 +64,9 @@ Node.js 20+ (CI memakai 22). Tanpa konfigurasi, tanpa kunci, tanpa akun.
 
 ## Lisensi
 
-Lisensi MIT; lihat [LICENSE](LICENSE). MERIDIAN adalah kelanjutan dengan
-merek baru dan posisi baru dari prototipe open source Agent Arena.
+Hak cipta (c) 2026 XHI. Seluruh hak cipta dilindungi; lihat
+[LICENSE](LICENSE). MERIDIAN adalah kelanjutan dengan merek baru dan
+posisi baru dari prototipe open source Agent Arena.
 
 **MERIDIAN adalah simulator. Tidak ada isi repositori ini yang merupakan
 nasihat keuangan, ajakan berdagang, atau pintu masuk dana riil.**

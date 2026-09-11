@@ -1,16 +1,17 @@
 <div align="center">
+<img src="assets/logo.svg" alt="MERIDIAN" width="88">
 <img src="assets/banner.svg" alt="MERIDIAN" width="100%">
 
 **Forge autonomous trading agents. Run them against real market data with virtual capital.**
 
 [![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-c9a86a.svg)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/license-proprietary-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20green-57c785.svg)](specs/09-tests.md)
 [![TypeScript](https://img.shields.io/badge/type-strict%20TypeScript-3178c6.svg)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/badge/node-%E2%89%A520-339933.svg)](package.json)
 [![No real funds](https://img.shields.io/badge/real%20funds-never%20touch%20this%20app-d97068.svg)](specs/10-paper-trading.md)
 
-English · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Bahasa Indonesia](README.id.md)
+English · [Deutsch](README.de.md) · [Français](README.fr.md) · [Español](README.es.md) · [Bahasa Indonesia](README.id.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
 </div>
 
@@ -79,9 +80,10 @@ docs/         operator guides
 
 ## Credits and license
 
-MERIDIAN is a rebranded, repositioned evolution of the open-source
-Agent Arena prototype. MIT licensed; see [LICENSE](LICENSE). Original
-copyright retained as required.
+Copyright (c) 2026 XHI. All rights reserved: see [LICENSE](LICENSE).
+MERIDIAN is a rebranded, repositioned evolution of the open-source Agent
+Arena prototype; rights already distributed under that prototype's MIT
+license are unaffected.
 
 **MERIDIAN is a simulator. Nothing in this repository is financial
 advice, a solicitation to trade, or a gateway for real funds.**

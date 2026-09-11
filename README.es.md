@@ -4,10 +4,10 @@
 **Forja agentes de trading autónomos. Evalúalos con datos reales de mercado y capital virtual.**
 
 [![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
-[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-c9a86a.svg)](LICENSE)
+[![Licencia](https://img.shields.io/badge/licencia-propietaria-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20en%20verde-57c785.svg)](specs/09-tests.md)
 
-[English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · Español · [Bahasa Indonesia](README.id.md)
+[English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · Español · [Bahasa Indonesia](README.id.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
 </div>
 
@@ -64,8 +64,9 @@ Node.js 20+ (CI usa 22). Sin configuración, sin claves, sin cuentas.
 
 ## Licencia
 
-Licencia MIT; ver [LICENSE](LICENSE). MERIDIAN es una evolución con
-marca nueva y reposicionada del prototipo open source Agent Arena.
+Copyright (c) 2026 XHI. Todos los derechos reservados; ver [LICENSE](LICENSE).
+MERIDIAN es una evolución con marca nueva y reposicionada del prototipo
+open source Agent Arena.
 
 **MERIDIAN es un simulador. Nada en este repositorio es asesoramiento
 financiero ni una invitación a operar con dinero real.**
