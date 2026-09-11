@@ -3,7 +3,6 @@
 
 **Forgez des agents de trading autonomes. Évaluez-les sur de vraies données de marché, avec du capital virtuel.**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![Licence](https://img.shields.io/badge/licence-propriétaire-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20verts-57c785.svg)](specs/09-tests.md)
 

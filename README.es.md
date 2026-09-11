@@ -3,7 +3,6 @@
 
 **Forja agentes de trading autónomos. Evalúalos con datos reales de mercado y capital virtual.**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![Licencia](https://img.shields.io/badge/licencia-propietaria-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20en%20verde-57c785.svg)](specs/09-tests.md)
 

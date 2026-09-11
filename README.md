@@ -4,7 +4,6 @@
 
 **Forge autonomous trading agents. Run them against real market data with virtual capital.**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![License: Proprietary](https://img.shields.io/badge/license-proprietary-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20green-57c785.svg)](specs/09-tests.md)
 [![TypeScript](https://img.shields.io/badge/type-strict%20TypeScript-3178c6.svg)](https://www.typescriptlang.org/)

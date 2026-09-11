@@ -4,7 +4,6 @@
 
 **铸造自主交易智能体，用真实市场数据与虚拟资金检验它们。**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![许可证](https://img.shields.io/badge/许可证-专有-c9a86a.svg)](LICENSE)
 [![测试](https://img.shields.io/badge/测试-226%20通过-57c785.svg)](specs/09-tests.md)
 [![TypeScript](https://img.shields.io/badge/type-strict%20TypeScript-3178c6.svg)](https://www.typescriptlang.org/)

@@ -4,7 +4,6 @@
 
 **鍛造自主交易代理，以真實市場資料與虛擬資金檢驗它們。**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![授權條款](https://img.shields.io/badge/授權條款-專有-c9a86a.svg)](LICENSE)
 [![測試](https://img.shields.io/badge/測試-226%20通過-57c785.svg)](specs/09-tests.md)
 [![TypeScript](https://img.shields.io/badge/type-strict%20TypeScript-3178c6.svg)](https://www.typescriptlang.org/)

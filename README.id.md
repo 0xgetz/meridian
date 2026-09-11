@@ -3,7 +3,6 @@
 
 **Forge trading agent yang mandiri. Uji mereka dengan data pasar asli dan modal virtual.**
 
-[![CI](https://github.com/0xgetz/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/0xgetz/meridian/actions/workflows/ci.yml)
 [![Lisensi](https://img.shields.io/badge/lisensi-proprietary-c9a86a.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-226%20lulus-57c785.svg)](specs/09-tests.md)
 
